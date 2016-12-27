@@ -11,22 +11,15 @@ SELECT * FROM books JOIN authors ON authors.id=books.author_id WHERE authors.nam
 SELECT * FROM books JOIN authors ON authors.id=books.author_id WHERE authors.nationality = 'China' OR authors.nationality = 'United Kingdom';
 
 -- Find out how many books Albert Camus wrote.
-SELECT COUNT(*) FROM books JOIN authors ON authors.id=books.author_id WHERE authors.name = 'Milan Kundera';
+SELECT COUNT(*) FROM books JOIN authors ON authors.id=books.author_id WHERE authors.name = 'Albert Camus';
 
--- Find out how many books were written by US authors.
-SELECT COUNT(*) FROM books JOIN authors ON authors.id=books.author_id WHERE authors.nationality = 'United States of America';
-
--- Find all books written after 1930 by authors from Argentina.
-SELECT COUNT(*) FROM books JOIN authors ON authors.id=books.author_id WHERE authors.nationality = 'Argentina' AND books.publication_date > 1930;
-
--- Find all books written before 1980 by authors not from the US.
+-- Find out how many books written before 1980 were by authors not from the US.
 SELECT COUNT(*) FROM books JOIN authors ON authors.id=books.author_id WHERE authors.nationality != 'United States of America' AND books.publication_date < 1980;
+
+-- For these last two, you should not need a JOIN.
 
 -- Find all authors whose names start with 'J'.
 SELECT * FROM authors WHERE name ILIKE 'J%';
 
 -- Find all books whose titles contain 'the'.
 SELECT * FROM books WHERE title ILIKE '%the%';
-
--- Find all authors who have written books with that start with the letter 'N'.
-SELECT DISTINCT authors.* FROM books JOIN authors on authors.id=books.author_id WHERE books.title ILIKE 'N%';
