@@ -36,4 +36,7 @@ $ psql -d library < seed.sql
 There are two exercises:
 
 * [Basic Queries](basic_queries.sql) - SELECT, INSERT, UPDATE, DELETE
+
+<!--Worth noting that no LEFT OUTER or RIGHT OUTER JOINS should be necessary for this homework -->
+
 * [Advanced Queries](advanced_queries.sql) - JOINS
