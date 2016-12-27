@@ -9,14 +9,10 @@
 
 -- Find out how many books Albert Camus wrote.
 
--- Find out how many books were written by US authors.
+-- Find out how many books written before 1980 were by authors not from the US.
 
--- Find all books written after 1930 by authors from Argentina.
-
--- Find all books written before 1980 by authors not from the US.
+-- For these last two, you should not need a JOIN.
 
 -- Find all authors whose names start with 'J'.
 
 -- Find all books whose titles contain 'the'.
-
--- Find all authors who have written books with that start with the letter 'N'.
