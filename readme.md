@@ -33,7 +33,7 @@ $ psql -d library < seed.sql
 
 ## Exercises
 
-There are two exercises:
+There are two exercise sets:
 
 * [Basic Queries](basic_queries.sql) - SELECT
 
